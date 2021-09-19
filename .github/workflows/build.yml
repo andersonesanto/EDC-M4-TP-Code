@@ -1,6 +1,7 @@
 name: Push to GCR GitHub Action
-on: [push]
-  branches: [master]
+on: 
+  push:
+    branches: [master]
 jobs:
   build-and-push-to-gcr:
     runs-on: ubuntu-latest
