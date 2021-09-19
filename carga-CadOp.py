@@ -8,6 +8,7 @@ dfCadOp = pd.read_csv(CadOpUrl,
 
 isPE = dfCadOp['UF'] == 'PE'
 dfCadOpPE = dfCadOp[isPE]
+print('dadosabertos.ans.gov.br - cadastro de operadoras de plano de saúde ativas em Pernambuco')
 print('Quantidade de planos de saúde privados em Pernambuco: {}'.format(
     len(dfCadOpPE.index)))
 print(dfCadOpPE[['Registro_ANS', 'Razao_Social']])
