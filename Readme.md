@@ -8,3 +8,8 @@
 | - | - |
 | loadcnes.py | aplicação de exemplo, em Python/pandas que efetua o download do cadastro de planos de saúde 
 | Dockerfile | 
+
+
+
+Referências
+https://github.com/marketplace/actions/push-to-gcr-github-action
