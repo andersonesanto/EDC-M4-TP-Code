@@ -11,8 +11,27 @@
 | Dockerfile | Cria o container, efetuando a importação das libs Python (PIP) e copiando o arquivo do código executável |
 | requirements.txt | arquivo contendo as libs python que serão importadas com o PIP no Dockerfile |
 | .github/workflows/build.yml | configuração de workflow do github, para efetuar o build do dockerfile e enviar a imagem para o registry do GCP gcr.io/edc-bootcamp-325711/edc-m4-tp:latest |
+| job.yml | yml para criacão de um JOB em kubernetes |
 
 
+## Execução em Docker
+```bash
+docker run --rm gcr.io/edc-bootcamp-325711/edc-m4-tp:latest
+```
+
+## Execução em Kubernetes
+```bash
+kubectl apply -f job.yml
+```
+obter o nome do job com 
+```bash
+kubectl get pods 
+```
+
+obter o log da execução
+```bash
+kubectl logs carga-cadop-g79t9
+```
 
 #### Referências
 - Material de referência do bootcamp IGTI

@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: carga-cadop
+spec:
+  backoffLimit: 3
+  activeDeadlineSeconds: 120
+  ttlSecondsAfterFinished: 100
+  template:
+    spec:
+      containers:
+      - name: edc-m4-tp
+        image: gcr.io/edc-bootcamp-325711/edc-m4-tp:latest
+        command: [ "python", "/carga-CadOp.py"]
+      restartPolicy: Never
