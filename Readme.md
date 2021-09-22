@@ -23,6 +23,7 @@ docker run --rm gcr.io/edc-bootcamp-325711/edc-m4-tp:latest
 ```bash
 kubectl apply -f job.yml
 ```
+
 obter o nome do job com 
 ```bash
 kubectl describe job carga-cadop
