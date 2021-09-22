@@ -25,12 +25,12 @@ kubectl apply -f job.yml
 ```
 obter o nome do job com 
 ```bash
-kubectl get pods 
+kubectl describe job carga-cadop
 ```
 
 obter o log da execução
 ```bash
-kubectl logs carga-cadop-g79t9
+kubectl logs {nome do job obtido no passo anterior}
 ```
 
 #### Referências
